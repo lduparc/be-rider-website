@@ -6,14 +6,24 @@
 /* =global elements
 --------------------------------------------- */
 body {
-  color: #999;
+  /*color: #999;*/
   font: 14px/1.5em "Lucida Grande", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   width: 720px;
   margin: 20px;
+  background-image: url("../images/samples-bg.png");
 }
 
-a:link, a:visited {
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/*a:link, a:visited {
   color: #3b5998;
   font-weight: bold;
   text-decoration: none;
@@ -28,13 +38,13 @@ h1 {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
-}
+}*/
 
 /* ------------------------------------------ */
 
 /* =header
 --------------------------------------------- */
-header {
+/*header {
   border-left: 1px solid #b3b3b3;
   border-right: 1px solid #b3b3b3;
   border-top: 1px solid #b3b3b3;
@@ -85,13 +95,13 @@ header .tagline {
   float: left;
   list-style: none;
   margin-left: 8px;
-}
+}*/
 
 /* ------------------------------------------ */
 
 /* =buttons
 --------------------------------------------- */
-.facebook-button:link, .facebook-button:visited {
+/*.facebook-button:link, .facebook-button:visited {
   background-color: #eee;
   background-image: -moz-linear-gradient(top, #fdfdfd, #eaebeb);
   background-image: -ms-linear-gradient(top, #fdfdfd, #eaebeb);
@@ -155,12 +165,12 @@ header .tagline {
   padding: 0 25px;
   text-decoration: none;
   text-shadow: 0 1px 1px rgba(255, 255, 255, .2);
-}
+}*/
 /* ------------------------------------------ */
 
 /* =get started
 --------------------------------------------- */
-#get-started {
+/*#get-started {
   background: url("../images/get-started-bg.jpg");
   border: 1px solid #353d4f;
   height: 105px;
@@ -180,12 +190,12 @@ header .tagline {
 #get-started p span {
   font-family: "HybreaRegular";
   font-size: 22px;
-}
+}*/
 /* ------------------------------------------ */
 
 /* =guides/samples spacing
 --------------------------------------------- */
-#guides h1,
+/*#guides h1,
 #samples h1 {
   margin-bottom: 15px;
   text-align: center;
@@ -205,12 +215,12 @@ header .tagline {
 #guides ul li p,
 #samples ul {
   padding: 0 4px;
-}
+}*/
 /* ------------------------------------------ */
 
 /* =guides
 --------------------------------------------- */
-#guides {
+/*#guides {
   border-bottom: 1px solid #b3b3b3;
   border-left: 1px solid #b3b3b3;
   border-right: 1px solid #b3b3b3;
@@ -252,12 +262,12 @@ header .tagline {
 
 #guides ul li a.heroku {
   background-position: 35px -519px;
-}
+}*/
 /* ------------------------------------------ */
 
 /* =samples
 --------------------------------------------- */
-#samples {
+/*#samples {
   background-image: url("../images/samples-bg.png");
   border-bottom: 1px solid #dadada;
   border-left: 1px solid #b3b3b3;
@@ -326,8 +336,8 @@ header .tagline {
   -moz-background-size: cover;
   background-size: cover;
 }
-
-#samples .inline li.first-column {
+*/
+/*#samples .inline li.first-column {
   margin-left: 0;
 }
 
@@ -344,7 +354,7 @@ header .tagline {
   margin-left: 0;
   margin-right: 12px;
 }
-
+*/
 
 /* ------------------------------------------ */
 

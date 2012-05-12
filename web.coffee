@@ -2,6 +2,7 @@ async   = require('async')
 express = require('express')
 util    = require('util')
 
+
 app = express.createServer(
   express.logger()
   express.static(__dirname + '/public')
@@ -14,6 +15,10 @@ app = express.createServer(
     scope:  'user_likes,user_photos,user_photo_video_tags'
   })
 )
+
+app.configure () ->
+  app.set 'views', __dirname + '/views'
+  app.set 'view engine', 'ejs'
 
 port = process.env.PORT || 3000
 
@@ -37,7 +42,7 @@ render_page = (req, res) ->
   req.facebook.app((app) ->
     req.facebook.me((user) ->
       res.render('index.ejs',
-        layout:    false
+        layout:    true
         req:       req
         app:       app
         user:      user
@@ -78,3 +83,9 @@ handle_facebook_request = (req, res) ->
 
 app.get('/', handle_facebook_request)
 app.post('/', handle_facebook_request)
+app.get('/about', (req, res)->
+  res.render 'about'
+)
+app.get('/contact', (req, res)->
+  res.render 'contact'
+)

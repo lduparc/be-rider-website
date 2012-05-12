@@ -7,21 +7,78 @@
 --------------------------------------------- */
 body {
   /*color: #999;*/
+<<<<<<< Updated upstream
   font: 14px/1.5em "Lucida Grande", Arial, sans-serif;
+=======
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+>>>>>>> Stashed changes
   -webkit-font-smoothing: antialiased;
   width: 720px;
   margin: 20px;
+  padding: 50px;
   background-image: url("../images/samples-bg.png");
 }
 
+<<<<<<< Updated upstream
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+=======
+header p {
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+#contact-block{
+  position: absolute;
+  top: 40px;
+  right: 70px;
+  width: 340px;
 }
+
+#contact-block:before {
+  content: "";
+  width: 2px;
+  height: 130%;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
+.metro-tile {
+  list-style: none;
+}
+
+.metro-tile a{
+  width: 100px;
+  height: 30px;
+  padding: 70px 0 0 10px;
+  background-color: red;
+  margin: 10px;
+  float: left;
+  text-align: left;
+  -moz-box-shadow: 2px 2px 8px #888;
+  -webkit-box-shadow: 2px 2px 8px #888;
+  box-shadow: 2px 2px 8px #888;
+}
+
+.metro-tile:hover {
+  -moz-box-shadow: 2px 2px 2px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  box-shadow: 2px 2px 2px #888;
+}
+
+
+h1{
+  font: 5em "Audiowide", "Lucida Grande", Helvetica, Arial, sans-serif;
+>>>>>>> Stashed changes
+}
+
+a, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 /*a:link, a:visited {
   color: #3b5998;

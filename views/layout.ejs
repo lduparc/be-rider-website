@@ -128,7 +128,13 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-
+    <nav id="color-picker">
+      <ul>
+        <li><a class="red" href=""></a></li>
+        <li><a class="yellow" href=""></a></li>
+        <li><a class="green" href=""></a></li>
+      </ul>
+    </nav>
     <header>
       <h1>BeRider</h1>
       <p>Welcome to BeRider website, stay tuned for some incoming awesome news !</p>
@@ -137,9 +143,9 @@
       <ul class="metro-tiles">
         <% var items = [ {"href": "https://apps.facebook.com/berider/", "name": "facebook", "target": "_blank" },
           {"href": "http://twitter.com","name": "twitter", "target": "_blank"},
-          {"href": "/contact","name": "contact"},
-          {"href": "/about","name": "about"},
-          {"href": "","name": "rss"}] %>
+          {"href": "/contact","name": "contact", "target": ""},
+          {"href": "/about","name": "about", "target": ""},
+          {"href": "","name": "rss", "target": ""}] %>
         <% for (i = 0; i < items.length; i++) { %>
           <li class="metro-tile">
             <a href="<%= items[i]["href"] %>" target="<%= items[i]["target"] %>">

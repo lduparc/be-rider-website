@@ -7,11 +7,7 @@
 --------------------------------------------- */
 body {
   /*color: #999;*/
-<<<<<<< Updated upstream
-  font: 14px/1.5em "Lucida Grande", Arial, sans-serif;
-=======
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
->>>>>>> Stashed changes
   -webkit-font-smoothing: antialiased;
   width: 720px;
   margin: 20px;
@@ -19,11 +15,6 @@ body {
   background-image: url("../images/samples-bg.png");
 }
 
-<<<<<<< Updated upstream
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-=======
 header p {
   font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -70,7 +61,6 @@ header p {
 
 h1{
   font: 5em "Audiowide", "Lucida Grande", Helvetica, Arial, sans-serif;
->>>>>>> Stashed changes
 }
 
 a, a:hover, a:visited {

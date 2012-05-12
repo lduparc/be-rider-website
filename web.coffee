@@ -1,7 +1,7 @@
 async   = require('async')
 express = require('express')
 util    = require('util')
-
+fs      = require "fs"
 
 app = express.createServer(
   express.logger()
@@ -88,4 +88,15 @@ app.get('/about', (req, res)->
 )
 app.get('/contact', (req, res)->
   res.render 'contact'
+)
+app.get('/facebook-icon', (req, res)->
+  fs.readFile "public/images/iconFacebook.png", "binary", (error, file) ->
+    if error
+      res.writeHead 500, {"Content-Type": "text/plain"}
+      res.write error + "\n"
+      res.end()
+    else
+      res.writeHead 200, {"Content-Type": "text/plain"}
+      res.write file, "binary"
+      res.end()
 )
